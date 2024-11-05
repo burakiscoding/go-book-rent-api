@@ -1,6 +1,6 @@
 # Go Book-Rent-App
 
-This is a REST API project. Main functionality is to rent books. It can be used in libraries. This project is developed in Go.
+This is a REST API project. Main functionality is to rent books. This project is developed in Go.
 
 ## Project Features
 
