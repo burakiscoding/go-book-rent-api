@@ -9,8 +9,7 @@ This is a REST API project. Main functionality is to rent books. It can be used 
 - Return the book you rented
 - Login & Register
 
-
-# Technical Details
+# Technical Details
 
 - Go
 - MySQL
