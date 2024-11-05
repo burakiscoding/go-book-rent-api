@@ -19,7 +19,7 @@ This is a REST API project. Main functionality is to rent books. It can be used 
 - Database transactions
 - JWT Authentication & Authorization
 
-# Project Structure
+## Project Structure
 
 I didn't use a complex folder structure because I didn't need it. I used very simple structure.
 
@@ -44,7 +44,7 @@ I didn't use a complex folder structure because I didn't need it. I used very si
     └── types.go
 ```
 
-# MySQL Tables
+## MySQL Tables
 
 books:
 
@@ -59,6 +59,7 @@ books:
 +------------+----------+------+-----+---------+----------------+
 ```
 
+<br>
 users:
 
 ```bash
@@ -75,6 +76,7 @@ users:
 +------------+-------------+------+-----+---------+-------+
 ```
 
+<br>
 book_rent_history:
 
 ```bash
@@ -90,17 +92,17 @@ book_rent_history:
 +-----------------------+-------------+------+-----+---------+-------+
 ```
 
-# How rent works?
+## How rent works?
 
 1. Insert new record to the "book_rent_history" table
 2. Decrease the quantity variable by one in the "books" table
 
-# How return works?
+## How return works?
 
 1. Update the rent_end_time variable in "book_rent_history" table
 2. Increase the quantity variable by one in the "books" table
 
-# Future improvements
+## Future improvements
 
 1. Pagination
 2. Filtered lists (delayed returns, old returns, etc.)
