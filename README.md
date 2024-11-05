@@ -2,16 +2,15 @@
 
 This is a REST API project. Main functionality is to rent books. It can be used in libraries. This project is developed in Go.
 
-## Project Features
+# Project Features
 
 - CRUD books
 - Rent a book
 - Return the book you rented
 - Login & Register
 
-<br>
 
-## Technical Details
+# Technical Details
 
 - Go
 - MySQL
@@ -21,13 +20,9 @@ This is a REST API project. Main functionality is to rent books. It can be used 
 - Database transactions
 - JWT Authentication & Authorization
 
-<br>
-
-## Project Structure
+# Project Structure
 
 I didn't use a complex folder structure because I didn't need it. I used very simple structure.
-
-<br>
 
 ```bash
 ├── api
@@ -50,9 +45,7 @@ I didn't use a complex folder structure because I didn't need it. I used very si
     └── types.go
 ```
 
-<br>
-
-## MySQL Tables
+# MySQL Tables
 
 books:
 
@@ -67,7 +60,6 @@ books:
 +------------+----------+------+-----+---------+----------------+
 ```
 
-<br>
 users:
 
 ```bash
@@ -84,7 +76,6 @@ users:
 +------------+-------------+------+-----+---------+-------+
 ```
 
-<br>
 book_rent_history:
 
 ```bash
@@ -100,26 +91,18 @@ book_rent_history:
 +-----------------------+-------------+------+-----+---------+-------+
 ```
 
-<br>
-
-## How rent works?
+# How rent works?
 
 1. Insert new record to the "book_rent_history" table
 2. Decrease the quantity variable by one in the "books" table
 
-<br>
-
-## How return works?
+# How return works?
 
 1. Update the rent_end_time variable in "book_rent_history" table
 2. Increase the quantity variable by one in the "books" table
 
-<br>
-
-## Future improvements
+# Future improvements
 
 1. Pagination
 2. Filtered lists (delayed returns, old returns, etc.)
 3. Better validation solution and more meaningful error messages
-
-<br>
