@@ -2,14 +2,14 @@
 
 This is a REST API project. Main functionality is to rent books. It can be used in libraries. This project is developed in Go.
 
-# Project Features
+## Project Features
 
 - CRUD books
 - Rent a book
 - Return the book you rented
 - Login & Register
 
-# Technical Details
+## Technical Details
 
 - Go
 - MySQL
